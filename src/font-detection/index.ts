@@ -1,7 +1,7 @@
-export { detectFontsFromImage } from './font-detection/detect'
+export { detectFontsFromImage } from './detect'
 export type {
   DetectionDebug,
   DetectionDebugCandidate,
   DetectionDebugSample,
   FontDetectionResult,
-} from './font-detection/types'
+} from './types'
