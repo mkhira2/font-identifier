@@ -1,0 +1,241 @@
+.app-shell {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-panel {
+  border-radius: 28px;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  background: linear-gradient(130deg, rgba(255, 242, 199, 0.92), rgba(255, 221, 186, 0.82));
+  border: 1px solid rgba(54, 38, 12, 0.2);
+  box-shadow: 0 20px 45px rgba(88, 62, 31, 0.18);
+}
+
+.hero-panel h1 {
+  margin: 0.15rem 0 0.5rem;
+  max-width: 20ch;
+  font-size: clamp(1.7rem, 4.8vw, 3rem);
+  line-height: 1.08;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #3f2a16;
+}
+
+.hero-subtitle {
+  margin: 0;
+  max-width: 64ch;
+  color: #4f3a25;
+}
+
+.workbench {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dropzone {
+  border-radius: 24px;
+  border: 2px dashed rgba(54, 38, 12, 0.35);
+  min-height: 245px;
+  background: rgba(255, 246, 228, 0.7);
+  display: grid;
+  gap: 0.3rem;
+  place-content: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem;
+  transition: transform 180ms ease, border-color 180ms ease;
+  animation: rise 380ms ease;
+}
+
+.dropzone:hover {
+  transform: translateY(-2px);
+  border-color: rgba(54, 38, 12, 0.75);
+}
+
+.dropzone input {
+  display: none;
+}
+
+.dropzone strong {
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.dropzone small {
+  color: #674f2d;
+}
+
+.dropzone.busy {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.dropzone.active {
+  border-color: rgba(226, 125, 47, 0.95);
+  background: linear-gradient(155deg, rgba(255, 241, 204, 0.96), rgba(255, 232, 183, 0.88));
+  box-shadow: 0 18px 40px rgba(198, 108, 28, 0.24);
+  transform: translateY(-4px) scale(1.01);
+}
+
+.dropzone.active strong {
+  color: #3c2004;
+}
+
+.analysis-panel {
+  border-radius: 24px;
+  border: 1px solid rgba(54, 38, 12, 0.2);
+  padding: 1rem;
+  background: #fffcf5;
+  display: grid;
+  gap: 0.75rem;
+  animation: rise 430ms ease;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-row h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.status-row span {
+  font-weight: 700;
+}
+
+.status-line {
+  margin: 0;
+  color: #6c5331;
+}
+
+.progress-track {
+  height: 0.55rem;
+  background: rgba(54, 38, 12, 0.15);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #e27d2f, #f2a446);
+  transition: width 220ms ease;
+}
+
+.winner-card {
+  border: 1px solid rgba(226, 125, 47, 0.35);
+  border-radius: 18px;
+  padding: 0.8rem;
+  background: linear-gradient(165deg, #fff5e3, #ffe6bc);
+}
+
+.winner-card p {
+  margin: 0;
+}
+
+.winner-card h3 {
+  margin: 0.2rem 0 0.25rem;
+  font-size: 1.65rem;
+}
+
+.result-grid {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.alt-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border: 1px solid rgba(54, 38, 12, 0.2);
+  border-radius: 14px;
+  padding: 0.6rem 0.7rem;
+}
+
+.alt-card p {
+  margin: 0;
+}
+
+.font-name {
+  font-size: 1.03rem;
+  max-width: 60%;
+}
+
+.font-preview {
+  margin-top: 0.18rem;
+  color: #5b4628;
+  font-size: 0.92rem;
+}
+
+.token-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.token-list span {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(54, 38, 12, 0.08);
+  top: 0;
+  background: #fff3dc;
+}
+
+.preview-panel {
+  border-radius: 24px;
+  border: 1px solid rgba(54, 38, 12, 0.2);
+  padding: 1rem;
+  background: #fffefb;
+}
+
+.preview-panel h2 {
+  margin-top: 0;
+}
+
+.preview-panel img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid rgba(54, 38, 12, 0.2);
+}
+
+.error {
+  margin: 0;
+  color: #9e1a00;
+}
+
+.footnote {
+  color: #60472a;
+}
+
+.footnote p {
+  margin: 0;
+}
+
+@media (max-width: 880px) {
+  .workbench {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(6px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

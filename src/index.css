@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anton&family=Architects+Daughter&family=Arimo:wght@400;700&family=Archivo+Black&family=Arvo:wght@400;700&family=Barlow:wght@400;700&family=Barlow+Condensed:wght@400;700&family=Bebas+Neue&family=Bree+Serif&family=Cabin:wght@400;700&family=Caladea:wght@400;700&family=Carlito:wght@400;700&family=Caveat:wght@400;700&family=Comic+Neue:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=Courier+Prime:wght@400;700&family=Cousine:wght@400;700&family=DM+Sans:wght@400;700&family=EB+Garamond:wght@400;700&family=Exo+2:wght@400;700&family=Fira+Mono:wght@400;700&family=Fira+Sans:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Gloria+Hallelujah&family=Handlee&family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;700&family=Inconsolata:wght@400;700&family=Indie+Flower&family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Josefin+Sans:wght@400;700&family=Karla:wght@400;700&family=Lato:wght@400;700&family=Lobster&family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Manrope:wght@400;700&family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Mulish:wght@400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&family=PT+Serif:wght@400;700&family=Quicksand:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Rubik:wght@400;700&family=Schoolbell&family=Shadows+Into+Light&family=Source+Code+Pro:wght@400;700&family=Source+Sans+3:wght@400;700&family=Space+Mono:wght@400;700&family=Tinos:wght@400;700&family=Titillium+Web:wght@400;700&family=Ubuntu:wght@400;700&family=Ubuntu+Mono:wght@400;700&family=Work+Sans:wght@400;700&family=Zilla+Slab:wght@400;700&display=swap');
+
+:root {
+  font-family: 'IBM Plex Sans', sans-serif;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #2f2114;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255, 232, 189, 0.8), transparent 45%),
+    radial-gradient(circle at 80% 90%, rgba(244, 185, 130, 0.6), transparent 52%),
+    #f4ebde;
+}
+
+#root {
+  width: min(1060px, 94vw);
+  margin: 1.2rem auto 2.1rem;
+  padding: 0.6rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', serif;
+  letter-spacing: -0.02em;
+  color: #251808;
+}
